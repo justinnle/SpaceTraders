@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="spacetraders1dot0.ConfigurationScreenController">
+  <children>
+    <TextField fx:id="playerName" layoutX="76.0" layoutY="86.0" prefWidth="200.0" text="Player Name" />
+    <VBox id="VBox" alignment="CENTER" layoutX="188.0" layoutY="152.0" spacing="5.0">
+      <children>
+        <TextField fx:id="pilotSkill" maxWidth="-Infinity" prefWidth="30.0" text="0" />
+        <TextField fx:id="fighterSkill" maxWidth="-Infinity" prefWidth="30.0" text="0" />
+        <TextField fx:id="traderSkill" maxWidth="-Infinity" prefWidth="30.0" text="0" />
+        <TextField fx:id="engineerSkill" maxWidth="-Infinity" prefWidth="30.0" text="0" />
+        <TextField fx:id="investorSkill" maxWidth="-Infinity" prefWidth="30.0" text="0" />
+      </children>
+    </VBox>
+    <VBox id="VBox" alignment="CENTER" layoutX="110.0" layoutY="152.0" prefHeight="127.0" spacing="5.0">
+      <children>
+        <Label prefHeight="22.0" text="Pilot" />
+        <Label prefHeight="22.0" text="Fighter" />
+        <Label prefHeight="22.0" text="Trader" />
+        <Label prefHeight="22.0" text="Engineer" />
+        <Label prefHeight="22.0" text="Investor" />
+      </children>
+    </VBox>
+    <HBox id="HBox" alignment="CENTER" layoutX="378.0" layoutY="349.0" prefWidth="170.0" spacing="5.0">
+      <children>
+        <Button fx:id="confirm" mnemonicParsing="false" onAction="#confirmHandler" text="Confirm" />
+        <Button fx:id="cancel" mnemonicParsing="false" onAction="#cancelHandler" text="Cancel" />
+      </children>
+    </HBox>
+    <Button fx:id="reset" layoutX="438.0" layoutY="233.0" mnemonicParsing="false" onAction="#resetHandler" text="Reset" />
+    <Label alignment="CENTER" layoutX="427.0" layoutY="170.0" prefWidth="70.0" text="Points Left" textAlignment="CENTER" />
+    <Label fx:id="pointsLeftLabel" layoutX="456.0" layoutY="193.0" text="15" />
+    <VBox id="VBox" alignment="CENTER" layoutX="254.0" layoutY="151.0" spacing="5.0">
+      <children>
+        <Button fx:id="pilotInc" mnemonicParsing="false" onAction="#incrementSkill" prefHeight="22.0" prefWidth="28.000099999997474" text="+" />
+        <Button fx:id="fighterInc" mnemonicParsing="false" onAction="#incrementSkill" prefHeight="22.0" prefWidth="28.000099999997474" text="+" />
+        <Button fx:id="traderInc" mnemonicParsing="false" onAction="#incrementSkill" prefHeight="22.000099999997474" prefWidth="29.0" text="+" />
+        <Button fx:id="engineerInc" mnemonicParsing="false" onAction="#incrementSkill" prefHeight="22.0" prefWidth="28.000099999997474" text="+" />
+        <Button fx:id="investorInc" mnemonicParsing="false" onAction="#incrementSkill" prefHeight="22.0" prefWidth="28.000099999997474" text="+" />
+      </children>
+    </VBox>
+    <VBox id="VBox" alignment="CENTER" layoutX="327.0" layoutY="152.0" spacing="5.0">
+      <children>
+        <Button fx:id="pilotDec" mnemonicParsing="false" onAction="#decrementSkill" prefHeight="22.0" prefWidth="28.000099999997474" text="-" />
+        <Button fx:id="fighterDec" mnemonicParsing="false" onAction="#decrementSkill" prefHeight="22.0" prefWidth="28.000099999997474" text="-" />
+        <Button fx:id="traderDec" mnemonicParsing="false" onAction="#decrementSkill" prefHeight="22.0" prefWidth="28.000099999997474" text="-" />
+        <Button fx:id="engineerDec" mnemonicParsing="false" onAction="#decrementSkill" prefHeight="22.0" prefWidth="28.000099999997474" text="-" />
+        <Button fx:id="investorDec" mnemonicParsing="false" onAction="#decrementSkill" prefHeight="22.0" prefWidth="28.000099999997474" text="-" />
+      </children>
+    </VBox>
+  </children>
+</AnchorPane>
